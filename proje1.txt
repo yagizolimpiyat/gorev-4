@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, s=1, t=1000000;
+    printf("7 basamakli bir sayi giriniz:");
+    scanf("%d", &a);
+    for(s;s<8;s++){
+        b=a/t;
+        a=a%t;
+        t/=10;
+        printf("%d  ",b);
+    }
+}
