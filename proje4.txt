@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d,e,f,i;
+    int array[6];
+    printf("6 sayi giriniz:");
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    array[0]=f;
+    array[1]=e;
+    array[2]=d;
+    array[3]=c;
+    array[4]=b;
+    array[5]=a;
+    for(i=0;i<6;i++)
+        printf("%d ",array[i]);
+}
