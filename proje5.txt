@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,sira=1,enk,A[6];
+    for(a=1;a<=6;a++){
+        printf("%d. sayiyi giriniz:",a);
+        scanf("%d",&b);
+        A[a-1]=b;
+    enk=A[0];
+    }
+    for(a=1;a<6;a++){
+        if(A[a]<enk){
+            enk=A[a];
+            sira=a+1;
+        }
+    }
+    printf("En kucuk sayi:%d",enk);
+    printf("\nSirasi:%d",sira);
+}
